@@ -125,14 +125,14 @@
 		<div class="row">
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong>Version:</strong> 1.0</li>
-					<li><strong>Author:</strong> <a href="http://www.OlaYZen.lol" target="_blank">OlaYZen</a></li>
+					<li><strong>Version:</strong><br> 1.0</li>
+					<li><strong>Author:</strong> <a href="http://www.OlaYZen.lol" target="_blank"><br>OlaYZen</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong class="font-weight-700">Created:</strong> 21 September, 2022</li>
-					<li><strong>Update:</strong> 21 September, 2022</li>
+					<li><strong class="font-weight-700">Created:</strong> <br>21 September, 2022</li>
+					<li><strong>Last Updated:</strong> <p id="demo"></p></li>
 				</ul>
 			</div>
 		</div>
@@ -236,5 +236,9 @@
 <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
 <!-- Custom Script -->
 <script src="assets/js/theme.js"></script>
+<script>
+  const date = new Date(document.lastModified);
+  document.getElementById("demo").innerHTML = date;
+  </script>
 </body>
 </html>
